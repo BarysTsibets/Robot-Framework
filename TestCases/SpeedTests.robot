@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${url}  http://demowebshop.tricentis.com/
+${url}  http://demowebshop.tricentis.com/register
 ${browser}  chrome
 
 *** Test Cases ***
