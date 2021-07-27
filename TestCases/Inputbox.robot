@@ -9,7 +9,7 @@ ${url}  https://demo.nopcommerce.com/
 TestingInputBox
     Open Browser  ${url}    ${browser}
     Maximize Browser Window
-    Title Should Be  nopCommerce demo store
+    Title Should Be  nopCommerce demo store     #check Title of the page
     Click Link  css:.ico-login
 
     ${"email_txt_box"}  set variable    css:.email  #Put Email inputtext box in variable
