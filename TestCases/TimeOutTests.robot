@@ -9,6 +9,20 @@ ${browser}  chrome
 RegTest
     Open Browser  ${url}    ${browser}
     Maximize Browser Window
+
+    ${time}     Get Selenium Timeout                        # Get Selenium TimeOuttime
+    Log To Console  ${time}
+
+    Wait Until Page Contains     Your Personal Details      #Wait Until Page Contains ---Default timeOut 5 Seconds
+
+    Set Selenium Timeout  7                                 #Set Selenium Timeout
+
+    Wait Until Page Contains     Register
+
+    ${time}     Get Selenium Timeout
+    Log To Console  ${time}
+
+
     Select Radio Button     Gender  M
     Input Text  id:FirstName    John
     Input Text  id:LastName     Florece
@@ -17,5 +31,5 @@ RegTest
     Input Text  id:ConfirmPassword  123Test
 
 
-    Close Browser
+    #Close Browser
 *** Keywords ***
