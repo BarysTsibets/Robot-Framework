@@ -16,5 +16,6 @@ RegTest
     Input Text  id:Password     123Test
     Input Text  id:ConfirmPassword  123Test
 
+
     Close Browser
 *** Keywords ***
