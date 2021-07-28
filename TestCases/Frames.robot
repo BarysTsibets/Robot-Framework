@@ -17,3 +17,6 @@ iFrametest
     #Unselect Frame
 
 
+    Close Browser
+
+
