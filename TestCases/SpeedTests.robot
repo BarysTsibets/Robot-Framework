@@ -11,7 +11,7 @@ RegTest
     Maximize Browser Window
 
     ${spead}=   Get Selenium Speed                      #Get Selenium Speed
-    Log To Console  ${spead}                            #Show speed in console
+    Log To Console  ${spead}
 
     Select Radio Button     Gender  M
 
