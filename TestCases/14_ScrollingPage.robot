@@ -10,4 +10,15 @@ ScrollingTest
 
     Sleep  1
 
-    Scroll Element Into View  id:#age                 #Scroll to the Element   css: / xpath:
+    Scroll Element Into View        css:[id="age"]                #Scroll to the Element   css: / xpath:
+
+    Sleep   1
+
+    Execute Javascript  window.scrollTo(0,document.body.scrollHeight)           #scrool to the bottom
+
+    sleep 1
+
+    Execute Javascript  window.scrollTo(0,-document.body.scrollHeight)           #scrool to the top
+
+    Close All Browsers
+
