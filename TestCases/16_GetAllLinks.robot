@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 *** Test Cases ***
 CountAllLinksTest
-    Open Browser    http://testautomationpractice.blogspot.com/     chrome
+    Open Browser    http://testautomationpractice.blogspot.com/     headlesschrome
     Maximize Browser Window
 
     ${CountLinks}=  Get Element Count  css:a                  #Count all elements that have css tag --> a  (links)
@@ -14,3 +14,5 @@ CountAllLinksTest
         ${linktext}=   Get Text  xpath:(//a)[${i}]            #Get text from link  with tag "a" and index [i]
         Log To Console  ${Linktext}
     END
+
+    Close All Browsers
