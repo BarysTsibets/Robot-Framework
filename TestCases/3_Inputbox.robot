@@ -9,13 +9,13 @@ ${url}  https://demo.nopcommerce.com/
 TestingInputBox
     Open Browser  ${url}    ${browser}
     Maximize Browser Window
-    Title Should Be  nopCommerce demo store     #check Title of the page
+    Title Should Be  nopCommerce demo store              #check Title of the page
     Click Link  css:.ico-login
 
-    ${"email_txt_box"}  set variable    css:.email  #Put Email inputtext box in variable
+    ${"email_txt_box"}  set variable    css:.email       #Put Email inputtext box in variable
 
-    Element Should Be Visible  ${"email_txt_box"}   #text box visible?
-    Element Should Be Enabled  ${"email_txt_box"}   #textbox enabled?
+    Element Should Be Visible  ${"email_txt_box"}        #text box visible?
+    Element Should Be Enabled  ${"email_txt_box"}        #textbox enabled?
 
     Input Text  ${"email_txt_box"}  testemail@gmail.com
     Sleep  3

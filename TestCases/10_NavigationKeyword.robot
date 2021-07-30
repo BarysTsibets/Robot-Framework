@@ -17,6 +17,6 @@ NavigationTest
     ${loc}  Get Location
     Log To Console  ${loc}
 
-    Close Browser
+    Close All Browsers
 
 
