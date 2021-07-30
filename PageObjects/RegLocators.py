@@ -1,6 +1,7 @@
 # locators for Registration Page
 
-r_btn_gender_male = "css:#gender-male"
+r_btn_gender_male = "Gender"                    # name
+m_gender_value = "M"                            # value
 txt_firstName = "id:FirstName"
 txt_lastname = "id:LastName"
 dropdown_day = "name:DateOfBirthDay"            # 0...31
